@@ -1,0 +1,31 @@
+{
+  "name": "postcss-color-adjustment",
+  "version": "0.1.0",
+  "description": "PostCSS color manipulations, functions, and analysis",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "ava \"test/*.test.js\" -v -s"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://drl-internal@dev.azure.com/drl-internal/Mikes%20Assets/_git/postCSS_color"
+  },
+  "keywords": [
+    "postcss"
+  ],
+  "author": "Mike Peutz <mpeutz@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^1.2.1",
+    "coveralls": "^3.0.2",
+    "istanbul": "^0.4.5",
+    "postcss": "^7.0.14",
+    "postcss-css-variables": "^0.11.0",
+    "postcss-simple-vars": "^5.0.1",
+    "postcss-value-parser": "^3.3.1",
+    "tinycolor2": "^1.4.1"
+  }
+}
