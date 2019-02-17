@@ -17,18 +17,22 @@ Functions that manipulate colors formats:
 - HSV, HSVA
 - Named
 
-##### Simple Syntax
+#### Syntax
   - color(&lt;base color&gt;, &lt;keyword&gt;(&lt;adjustment-factor&gt;))
 
-#### Mix Syntax (The mix function takes a second color so it has a slightly different syntax)
+#### Average Syntax
+  - color(&lt;base color&gt;, average(&lt;secondary color&gt;))
+
+#### Mix Syntax
   - color(&lt;base color&gt;, mix(&lt;secondary color&gt;,&lt;adjustment-factor&gt;))
 
 #### Chained Syntax (operations are performed from left to right)
-  - color(&lt;base color&gt;, &lt;keyword&gt;(&lt;adjustment-factor&gt;) &lt;keyword&gt;(&lt;adjustment-factor&gt;) &lt;keyword&gt;(&lt;adjustment-factor&gt;) &lt;...&gt;) _note: do not separated chained color functions with a comma_
+  - color(&lt;base color&gt;, &lt;keyword&gt;(&lt;adjustment-factor&gt;) &lt;keyword&gt;(&lt;adjustment-factor&gt;) &lt;keyword&gt;(&lt;adjustment-factor&gt;) &lt;...&gt;)
+  _note: do not separated chained color actions with a comma_
 
 #### Available actions
 
-| Function | Parameters           | Result                  |
+| Action & Alias| Parameters           | Result                  |
 |--------|:----------------------:|-------------------------|
 | **darken**, shade, d | color, adjustment factor(0-100) | darkens color |
 | **lighten**, tint, l | color, adjustment factor(0-100) | lightens color |
@@ -54,7 +58,7 @@ color: color(#f00 lighten(20));          /* #ff6666  */
 color: color(#f00 brighten(20));         /* #ff3333  */
 color: color(#f00 desaturate(20));       /* #e61919  */
 color: color(#f00 saturate(20));         /* #ff0000  */
-color: color(#f00 grayscale);            /* #808080  */
+color: color(#f00 grayscale());            /* #808080  */
 color: color(#f00 shift(120));           /* #00ff00  */
 color: color(#f00 mix(#00f,40);          /* rgb(153, 0, 102)  */
 color: color(#f00 average(#0f0));        /* rgb(128, 128, 0)  */
