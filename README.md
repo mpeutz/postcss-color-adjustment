@@ -1,4 +1,4 @@
-# PostCSS Color Adjuster plugin
+# PostCSS Color Adjustment plugin
 
 This PostCss plugin provides several utility actions used to manipulate, adjust, and analyse colors in you css files. Most actions call for a single color and an adjustment factor, but some call for two colors, while others forgo any adjustment factor property. The plugin was inspired by the color functions of Sass and the syntax from the awesome [postcss-color-functions](https://github.com/postcss/postcss-color-function) plugin.
 
