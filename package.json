@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://drl-internal@dev.azure.com/drl-internal/Mikes%20Assets/_git/postCSS_color"
+    "url": "https://github.com/mpeutz/postcss-color-adjustment.git"
   },
   "keywords": [
     "postcss"
