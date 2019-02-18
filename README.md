@@ -5,7 +5,7 @@ This PostCss plugin provides several utility actions used to manipulate, adjust,
 
 ## Installation
 
-  `npm install postcss-color-adjuster`
+  `npm install postcss-color-adjustment`
 
 
 #### Acceptable Color Formats
