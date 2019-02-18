@@ -11,25 +11,45 @@ This PostCss plugin provides several utility actions used to manipulate, adjust,
 #### Acceptable Color Formats
 
 Functions that manipulate colors formats:
-- Hex, 8-digit (RGBA) Hex
+- Hex, 3-digit shorthand Hex, 8-digit (RGBA) Hex
 - RGB, RGBA
 - HSL, HSLA
 - HSV, HSVA
-- Named
+- Named colors
 
-#### Syntax
-  - color(&lt;base color&gt;, &lt;keyword&gt;(&lt;adjustment-factor&gt;))
+#### Basic Syntax
+  ```css
+  /*
+   * rule: color(<base color>, <keyword>(<adjustment-factor>))
+   **/
 
+   background-color: color(#f00, darken(20));
+  ```
 #### Average Syntax
-  - color(&lt;base color&gt;, average(&lt;secondary color&gt;))
+  ```css
+  /*
+   * rule: color(<base color>, average(<secondary color>))
+   **/
 
+   color: color(#2ef, average(#f24));
+  ```
 #### Mix Syntax
-  - color(&lt;base color&gt;, mix(&lt;secondary color&gt;,&lt;adjustment-factor&gt;))
+  ```css
+  /*
+   * rule: color(<base color>, mix(<secondary color>, <adjustment-factor>))
+   **/
 
+   border: 1px solid color(#f00 mix(#00f,40));
+  ```
 #### Chained Syntax (operations are performed from left to right)
-  - color(&lt;base color&gt;, &lt;keyword&gt;(&lt;adjustment-factor&gt;) &lt;keyword&gt;(&lt;adjustment-factor&gt;) &lt;keyword&gt;(&lt;adjustment-factor&gt;) &lt;...&gt;)
-  _note: do not separated chained color actions with a comma_
+  ```css
+  /*
+   * rule: color(<base color>, <keyword>(<adjustment-factor>) <keyword>(<adjustment-factor>) <keyword>(<adjustment-factor>) <.etc..> )
+   **/
 
+   box-shadow: 0 0 10px color(#bada55 saturate(20) darken(20));
+  ```
+  _note: do not separated chained color actions with a comma_
 #### Available actions
 
 | Action & Alias| Parameters           | Result                  |
