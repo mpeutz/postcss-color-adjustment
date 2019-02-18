@@ -1,6 +1,6 @@
 {
   "name": "postcss-color-adjustment",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "PostCSS color manipulations, functions, and analysis",
   "main": "index.js",
   "directories": {
