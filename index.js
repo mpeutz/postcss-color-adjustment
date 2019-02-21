@@ -1,9 +1,9 @@
-// Color Plugin for my-postcss -- version 1.1
+// Color adjustment Postcss Plugin
 
 const postcss = require('postcss');
 const tinycolor = require("tinycolor2");
 
-module.exports = postcss.plugin('color-adjuster', function () {
+module.exports = postcss.plugin('color-adjustment', function () {
 
     function extract(main, type) {
         let regExp = /\(([^)]+)\)/;
@@ -157,7 +157,7 @@ module.exports = postcss.plugin('color-adjuster', function () {
     }
 
 
-    return function(css, result) {
+    return function(css) {
 
         css.replaceValues(/color\((.+?)\)\)/g,{ fast: 'color(' }, string => {
 

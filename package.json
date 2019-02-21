@@ -24,8 +24,10 @@
     "istanbul": "^0.4.5",
     "postcss": "^7.0.14",
     "postcss-css-variables": "^0.11.0",
-    "postcss-simple-vars": "^5.0.1",
-    "postcss-value-parser": "^3.3.1",
+    "postcss-simple-vars": "^5.0.2",
+    "postcss-value-parser": "^3.3.1"
+  },
+  "dependencies": {
     "tinycolor2": "^1.4.1"
   }
 }
