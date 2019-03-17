@@ -56,7 +56,7 @@ Functions that manipulate colors formats:
 
 | Action & Alias| Parameters           | Result                  |
 |--------|:----------------------:|-------------------------|
-| **darken**, shade, d | color, adjustment factor(0-100) | darkens color |
+| **darken**, shade, d | color, adjustment factor(0-100) |  darkens color |
 | **lighten**, tint, l | color, adjustment factor(0-100) | lightens color |
 | **brighten**, b | color, adjustment factor(0-100) | brightens color |
 | **desaturate** d | color, adjustment factor(0-100) | desaturate color |
